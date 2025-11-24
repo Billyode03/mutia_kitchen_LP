@@ -1,11 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutia Kitchen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutia Tahrim Kitchen</title>
+
+  <!-- TAILWIND CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Custom brand colors */
+    :root {
+      --brand-blue: #84A9D9;
+      --brand-blue-dark: #5679B4;
+      --brand-cream: #FFF4D6;
+      --brand-pink: #FF6FAE;
+      --brand-dark: #2E2E2E;
+    }
+  </style>
 </head>
-<body>
+
+<body class="bg-[var(--brand-cream)] text-[var(--brand-dark)]">
+
+  <!-- NAVBAR -->
+<nav class="w-full bg-[#84A9D9] px-6 py-4 shadow">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
     
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="../mutia_kitchen_LP/image/logo.png" alt="logo" class="w-14 h-14">
+      <h1 class="text-xl font-bold text-white">Mutia Tahrim | Kitchen</h1>
+    </div>
+
+    <!-- Menu -->
+    <div class="hidden md:flex items-center gap-6">
+      <a href="#produk" class="text-white font-medium hover:text-[#FDE8C0] transition">Produk</a>
+      <a href="#tentang" class="text-white font-medium hover:text-[#FDE8C0] transition">Tentang Kami</a>
+      <a href="#kontak" class="text-white font-medium hover:text-[#FDE8C0] transition">Kontak</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-white text-2xl">
+      ☰
+    </button>
+
+  </div>
+</nav>
+
+  
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-[var(--brand-blue-dark)] leading-snug">
+        Home Made Premium Bolen & Kue Basah <br>
+        <span class="text-[var(--brand-pink)]"> dari Mutia Kitchen</span>
+      </h1>
+
+      <p class="mt-4 text-lg text-[var(--brand-dark)]">
+        Fresh setiap hari, dibuat dari bahan pilihan dan siap antar ke wilayah kamu!
+      </p>
+
+      <a href="https://wa.me/6281244357053"
+        class="mt-6 inline-block bg-[var(--brand-pink)] text-white px-6 py-3 rounded-xl font-semibold shadow hover:opacity-90">
+        Pesan via WhatsApp
+      </a>
+    </div>
+
+    <div class="flex-1">
+      <img src="../mutia_kitchen_LP/image/hero_bolen.jpg" class="rounded-xl shadow-lg">
+    </div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section id="layanan" class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-[var(--brand-blue-dark)]">Layanan Kami</h2>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+        <!--SARAPAN -->
+        <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
+          <!-- <img src="../mutia_kitchen_LP/image/bolen.jpg" class="rounded-lg mb-4"> -->
+          <h3 class="text-xl font-bold">Sarapan Keluarga</h3>
+          <p class="mt-2">Lembut, isi melimpah, dan full butter.</p>
+        </div>
+ 
+        <!-- hAJATAN -->
+        <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
+          <!-- <img src="../mutia_kitchen_LP/image/risol_mayo.jpg" class="rounded-lg mb-4"> -->
+          <h3 class="text-xl font-bold">Hajatan</h3>
+          <p class="mt-2">Crispy di luar, creamy di dalam.</p>
+        </div>
+
+        <!-- Snack Box -->
+        <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
+          <!-- <img src="../mutia_kitchen_LP/image/hajatan.jpg" class="rounded-lg mb-4"> -->
+          <h3 class="text-xl font-bold">Dan Acara lainnya</h3>
+          <p class="mt-2">Cocok untuk acara & snack box.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- ABOUT COMPANY -->
+<section id="tentang" class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center text-[var(--brand-blue-dark)]">
+      Tentang Mutia Tahrim Kitchen
+    </h2>
+
+    <!-- CARD PANJANG -->
+  <div class="mt-10 bg-[var(--brand-cream)] rounded-2xl shadow-lg pt-6 pb-8 px-8 md:flex items-center gap-10">
+
+  <!-- TEKS KIRI -->
+  <div class="flex-1">
+
+    <p class="text-sm font-semibold text-[var(--brand-pink)] uppercase tracking-wide">
+      Sejak 2020 • Homemade Fresh Daily
+    </p>
+
+    <h3 class="text-2xl font-bold text-[var(--brand-blue-dark)] mt-0">
+      Homemade, Fresh, dan Premium
+    </h3>
+
+    <p class="mt-4 leading-relaxed text-[var(--brand-dark)] text-left md:text-justify" style="text-align: justify;">
+      Mutia Tahrim Kitchen adalah brand homemade yang fokus pada pembuatan 
+      <b>bollen premium, kue basah, dan aneka snack</b> yang dibuat setiap hari 
+      menggunakan bahan pilihan. Kami hadir untuk memberikan pengalaman 
+      rasa terbaik, cocok untuk konsumsi harian, acara keluarga, maupun 
+      kebutuhan snack box.
+    </p>
+    
+    <p class="mt-4 leading-relaxed text-[var(--brand-dark)] text-left md:text-justify" style="text-align: justify;">
+    <!-- <p class="mt-4 leading-relaxed text-[var(--brand-dark)]"> -->
+      Dengan komitmen pada kualitas, kebersihan, dan rasa yang autentik, 
+      kami telah menjadi pilihan banyak pelanggan di wilayah Pulau Wangi Wangi.
+    </p>
+
+    <a href="https://wa.me/6281244357053" 
+       class="inline-block mt-6 bg-[var(--brand-pink)] text-white px-6 py-3 rounded-xl font-semibold shadow hover:opacity-90">
+      Hubungi Kami
+    </a>
+  </div>
+
+  <!-- FOTO KANAN -->
+  <div class="flex-1 mt-6 md:mt-0">
+    <img src="../mutia_kitchen_LP/image/about.jpg" 
+         class="rounded-xl shadow-lg w-full object-cover">
+  </div>
+</div>
+</section>
+
+
+
+  <!-- PRODUK -->
+  <section id="produk" class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-[var(--brand-blue-dark)]">Produk Kami</h2>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+        <!-- Bollen -->
+        <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
+          <img src="../mutia_kitchen_LP/image/bolen.jpg" class="rounded-lg mb-4">
+          <h3 class="text-xl font-bold">Bollen Premium</h3>
+          <p class="mt-2">Lembut, isi melimpah, dan full butter.</p>
+        </div>
+
+        <!-- Risol -->
+        <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
+          <img src="../mutia_kitchen_LP/image/risol_mayo.jpg" class="rounded-lg mb-4">
+          <h3 class="text-xl font-bold">Risol Mayo</h3>
+          <p class="mt-2">Crispy di luar, creamy di dalam.</p>
+        </div>
+
+        <!-- Aneka Kue -->
+        <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
+          <img src="../mutia_kitchen_LP/image/hajatan.jpg" class="rounded-lg mb-4">
+          <h3 class="text-xl font-bold">Snack Box</h3>
+          <p class="mt-2">Cocok untuk acara & snack box.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-[var(--brand-blue-dark)] text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>© 2025 Mutia Tahrim Kitchen. All Rights Reserved.</p>
+    </div>
+  </footer>
+
 </body>
-</html>  
+</html>
