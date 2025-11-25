@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mutia Tahrim Kitchen - Bolen premium, risol mayo, kue basah homemade fresh setiap hari. Free ongkir area tertentu.">
+  <meta name="keywords" content="bolen, risol mayo, snack box, kue basah, wangi wangi, mutia kitchen">
+
   <title>Mutia Tahrim Kitchen</title>
 
   <!-- TAILWIND CDN -->
@@ -16,8 +19,10 @@
       --brand-cream: #FFF4D6;
       --brand-pink: #FF6FAE;
       --brand-dark: #2E2E2E;
+      --brand-blue-light: #AFCBEB; /* contoh warna lebih terang */
     }
   </style>
+
 </head>
 
 <body class="bg-[var(--brand-cream)] text-[var(--brand-dark)]">
@@ -34,17 +39,23 @@
 
     <!-- Menu -->
     <div class="hidden md:flex items-center gap-6">
-      <a href="#produk" class="text-white font-medium hover:text-[#FDE8C0] transition">Produk</a>
-      <a href="#tentang" class="text-white font-medium hover:text-[#FDE8C0] transition">Tentang Kami</a>
-      <a href="#kontak" class="text-white font-medium hover:text-[#FDE8C0] transition">Kontak</a>
+      <a href="#produk" class="text-white font-medium hover:text-[#FDE8C0] transition transform hover:scale-110">Produk</a>
+      <a href="#tentang" class="text-white font-medium hover:text-[#FDE8C0] transition transform hover:scale-110">Tentang Kami</a>
+      <a href="#kontak" class="text-white font-medium hover:text-[#FDE8C0] transition transform hover:scale-110">Kontak</a>
     </div>
 
     <!-- Mobile Menu Button -->
-    <button class="md:hidden text-white text-2xl">
+    <button id="menuBtn" class="md:hidden text-white text-3xl">
       ☰
     </button>
-
+    
   </div>
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden flex flex-col bg-[#84A9D9] text-white mt-4 rounded-lg p-4 space-y-3">
+        <a href="#produk" class="font-medium hover:text-[#FDE8C0] transition transform hover:scale-110">Produk</a>
+        <a href="#tentang" class="font-medium hover:text-[#FDE8C0] transition transform hover:scale-110">Tentang Kami</a>
+        <a href="#kontak" class="font-medium hover:text-[#FDE8C0] transition transform hover:scale-110">Kontak</a>
+      </div>
 </nav>
 
   
@@ -80,28 +91,59 @@
 
         <!--SARAPAN -->
         <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
-          <!-- <img src="../mutia_kitchen_LP/image/bolen.jpg" class="rounded-lg mb-4"> -->
-          <h3 class="text-xl font-bold">Sarapan Keluarga</h3>
-          <p class="mt-2">Lembut, isi melimpah, dan full butter.</p>
+          <img src="../mutia_kitchen_LP/image/Eating together-cuate.png" class="rounded-lg mb-4">
+          <h3 class="text-xl font-bold"style="text-align: center;">Sarapan Keluarga</h3>
+          <p class="mt-2" style="text-align: center;">Jadikan Bolen Mutia Tahrim menjadi menu sarapan keluarga Anda.</p>
         </div>
- 
+        
         <!-- hAJATAN -->
         <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
-          <!-- <img src="../mutia_kitchen_LP/image/risol_mayo.jpg" class="rounded-lg mb-4"> -->
-          <h3 class="text-xl font-bold">Hajatan</h3>
-          <p class="mt-2">Crispy di luar, creamy di dalam.</p>
+          <img src="../mutia_kitchen_LP/image/Marriage counseling-amico.png" class="rounded-lg mb-4">
+          <h3 class="text-xl font-bold" style="text-align: center;">Hajatan</h3>
+          <p class="mt-2" style="text-align: center;">Produk kami juga dapat menemani hajatan Anda.</p>
         </div>
 
         <!-- Snack Box -->
         <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
-          <!-- <img src="../mutia_kitchen_LP/image/hajatan.jpg" class="rounded-lg mb-4"> -->
-          <h3 class="text-xl font-bold">Dan Acara lainnya</h3>
-          <p class="mt-2">Cocok untuk acara & snack box.</p>
+          <img src="../mutia_kitchen_LP/image/Catering service-bro.png" class="rounded-lg mb-4">
+          <h3 class="text-xl font-bold " style="text-align: center;">Dan Acara lainnya</h3>
+          <p class="mt-2" style="text-align: center;">Acara yang lain juga dapat di variasikan dengan Produk kami.</p>
         </div>
       </div>
     </div>
   </section>
 
+<!-- KEUNGGULAN -->
+<section class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <h2 class="text-3xl font-bold text-center text-[var(--brand-blue-dark)]">
+      Kenapa Memilih Kami?
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+      <!-- Free Ongkir -->
+      <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow text-center">
+        <h3 class="text-xl font-bold">Free Ongkir Area Tertentu</h3>
+        <p class="mt-2">Gratis ongkir untuk wilayah Manggala, Toddopuli, dan Antang.</p>
+      </div>
+
+      <!-- Fresh Daily -->
+      <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow text-center">
+        <h3 class="text-xl font-bold">Fresh Setiap Hari</h3>
+        <p class="mt-2">Semua produk dibuat pada hari yang sama dengan bahan premium.</p>
+      </div>
+
+      <!-- Trusted -->
+      <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow text-center">
+        <h3 class="text-xl font-bold">Dipercaya Banyak Pelanggan</h3>
+        <p class="mt-2">Telah melayani acara keluarga, ulang tahun, hingga instansi.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
  
 
   <!-- ABOUT COMPANY -->
@@ -154,8 +196,6 @@
 </div>
 </section>
 
-
-
   <!-- PRODUK -->
   <section id="produk" class="bg-white py-16">
     <div class="max-w-6xl mx-auto px-6">
@@ -165,36 +205,141 @@
 
         <!-- Bollen -->
         <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
-          <img src="../mutia_kitchen_LP/image/bolen.jpg" class="rounded-lg mb-4">
-          <h3 class="text-xl font-bold">Bollen Premium</h3>
-          <p class="mt-2">Lembut, isi melimpah, dan full butter.</p>
+          <img src="../mutia_kitchen_LP/image/bolen_.jpg" class="rounded-lg mb-4">
+          <h3 class="text-xl font-bold" style="text-align: center;" >Bollen Premium</h3>
+          <p class="mt-2" style="text-align: center;">Lembut, isi melimpah, dan full butter.</p>
         </div>
 
         <!-- Risol -->
         <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
           <img src="../mutia_kitchen_LP/image/risol_mayo.jpg" class="rounded-lg mb-4">
-          <h3 class="text-xl font-bold">Risol Mayo</h3>
-          <p class="mt-2">Crispy di luar, creamy di dalam.</p>
+          <h3 class="text-xl font-bold" style="text-align: center;">Risol Mayo</h3>
+          <p class="mt-2" style="text-align: center;">Crispy di luar, creamy di dalam.</p>
         </div>
 
         <!-- Aneka Kue -->
         <div class="bg-[var(--brand-cream)] p-6 rounded-xl shadow">
           <img src="../mutia_kitchen_LP/image/hajatan.jpg" class="rounded-lg mb-4">
-          <h3 class="text-xl font-bold">Snack Box</h3>
-          <p class="mt-2">Cocok untuk acara & snack box.</p>
+          <h3 class="text-xl font-bold" style="text-align: center;">Snack Box</h3>
+          <p class="mt-2" style="text-align: center;">Cocok untuk acara Random, Anda dapat memilih beragam variasi Kue , sesuai dengan pemesanan.</p>
         </div>
 
       </div>
     </div>
   </section>
 
+<!-- SARAN UNTUK KAMI -->
+<section id="saran" class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="bg-white shadow-md rounded-2xl p-10 max-w-4xl mx-auto">
+
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+  
+        <!-- LEFT: Title + Desc + WA Button -->
+        <div>
+          <h2 class="text-3xl font-bold text-[var(--brand-blue-dark)]">
+            Saran Untuk Kami
+          </h2>
+  
+          <p class="mt-3 text-[var(--brand-dark)] leading-relaxed" style="text-align: justify;">
+            Kami selalu berusaha meningkatkan kualitas produk dan layanan.  
+            Jika Anda memiliki kritik atau saran, silakan kirim melalui form di samping,  
+            atau langsung hubungi kami melalui WhatsApp.
+          </p>
+          <div class="flex justify-center mt-6">
+            <a href="https://wa.me/6281244357053" target="_blank"
+              class="inline-flex items-center gap-3 bg-green-500 text-white px-5 py-3 rounded-xl shadow hover:opacity-90 transition font-semibold">
+        
+              <img src="image/logo_wa.png" class="w-7 h-7" alt="WhatsApp">
+              Chat Via WhatsApp
+            </a>
+          </div>
+        </div>
+  
+        <!-- RIGHT: FORM -->
+        <form action="mailto:youremail@domain.com" method="POST" enctype="text/plain"
+          class="bg-[var(--brand-cream)] p-8 rounded-2xl shadow space-y-6">
+  
+          <div>
+            <label class="font-semibold">Nama</label>
+            <input type="text" name="nama" required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none">
+          </div>
+  
+          <div>
+            <label class="font-semibold">Email</label>
+            <input type="email" name="email" required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none">
+          </div>
+  
+          <div>
+            <label class="font-semibold">Pesan / Saran</label>
+            <textarea name="pesan" rows="5" required
+              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none"></textarea>
+          </div>
+  
+          <button type="submit"
+            class="w-full bg-[var(--brand-pink)] text-white py-3 rounded-xl font-semibold shadow hover:opacity-90 transition">
+            Kirim Saran
+          </button>
+        </form>
+  
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-[var(--brand-blue-dark)]">
+      Testimoni Pelanggan
+    </h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-10">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <div class="border-2 border-[var(--brand-blue-light)] rounded-lg overflow-hidden">
+          <img src="image/testi-wa1.jpg" class="w-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer class="bg-[var(--brand-blue-dark)] text-white py-6 mt-12">
-    <div class="max-w-6xl mx-auto text-center">
+    <div class="max-w-6xl mx-auto text-center space-y-3">
+   
+      <!-- Social Media -->
+      <div class="flex justify-center gap-4 text-xl">
+        <a href="https://instagram.com/yourIG" target="_blank" class="hover:text-[var(--brand-pink)]"> 
+          <img src="../mutia_kitchen_LP/image/logo_ig.png" alt="">
+        </a>
+        <a href="https://wa.me/6281244357053" target="_blank" class="hover:text-[var(--brand-pink)]">
+          <img src="../mutia_kitchen_LP/image/logo_fb.png" alt="">
+        </a>
+        <a href="https://wa.me/6281244357053" target="_blank" class="hover:text-[var(--brand-pink)]">
+          <img src="../mutia_kitchen_LP/image/logo_wa.png" alt="">
+        </a>
+      </div>
+  
+      <!-- Copyright -->
       <p>© 2025 Mutia Tahrim Kitchen. All Rights Reserved.</p>
+  
     </div>
   </footer>
+  
 
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+  
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
